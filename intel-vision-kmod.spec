@@ -12,7 +12,7 @@
 Name:           %{pkgname}-kmod
 Summary:        Kernel module (kmod) for %{pkgname}
 Version:        2025112.WW46.3_25_ptl_pv
-Release:        1%{?dist}
+Release:        2%{?dist}
 License:        GPL-2.0-or-later
 
 URL:            https://github.com/intel/vision-drivers
@@ -63,5 +63,8 @@ done
 
 
 %changelog
+* Thu Nov 20 2025 Ben Matteson <bmatteso@us.ibm.com> - WW46.3_25_ptl_pv-2
+- Update spec file
+
 * Thu Oct 30 2025 Ben Matteson <bmatteso@us.ibm.com> - WW46.3_25_ptl_pv-1
 - Update to WW46.3_25_ptl_pv
