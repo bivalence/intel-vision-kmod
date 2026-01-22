@@ -12,11 +12,13 @@
 Name:           %{pkgname}-kmod
 Summary:        Kernel module (kmod) for %{pkgname}
 Version:        2025112.WW46.3_25_ptl_pv
-Release:        2%{?dist}
+Release:        3%{?dist}
 License:        GPL-2.0-or-later
 
 URL:            https://github.com/intel/vision-drivers
-Source0:        https://github.com/intel/vision-drivers/archive/refs/tags/%{tags}.tar.gz
+Source0:        %{url}/archive/refs/tags/%{tags}.tar.gz
+
+ExclusiveArch:  x86_64
 
 BuildRequires:  gcc
 BuildRequires:  elfutils-libelf-devel
@@ -63,6 +65,9 @@ done
 
 
 %changelog
+* Tue Dec 30 2025 Kate Hsuan <hpa@redhat.com> - 2025112.WW46.3_25_ptl_pv-3
+- Update ExclusiveArch
+
 * Thu Nov 20 2025 Ben Matteson <bmatteso@us.ibm.com> - WW46.3_25_ptl_pv-2
 - Update spec file
 
